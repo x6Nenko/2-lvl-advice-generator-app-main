@@ -1,0 +1,98 @@
+.attribution { color: #828C8F; font-size: 11px; text-align: center; margin-top: 60px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800 ;
+    background-color: #202632;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.main-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    width: 343px;
+    background-color: #313A49;
+    padding: 44px 24px 0;
+    border-radius: 10px;
+}
+
+.main-wrapper p {
+    font-size: 0.6875rem;
+    line-height: 15px;
+    letter-spacing: 0.325em;
+
+    color: #52FFAB;
+}
+
+.main-wrapper h1 {
+    font-size: 1.5rem;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+
+    color: #CEE2E9;
+}
+
+.btn {
+    transition: all 0.2s ease-in-out;
+    display: grid;
+    place-content: center;
+    height: 64px;
+    width: 64px;
+    background-color: #53FFAB;
+    border-radius: 100%;
+    margin-bottom: -32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover, .btn:focus {
+    transition: all 0.2s ease-in-out;
+    background-color: #52FEAA;
+    box-shadow: 0px 0px 30px 10px #31705B;
+}
+
+.desk-divider {
+    display: none;
+}
+
+/* =========== DESKTOP QUERIES =========== */
+
+@media screen and (min-width: 700px) {
+    .main-wrapper {
+        width: 540px;
+        padding: 52px 48px;
+        gap: 38px;
+    }
+
+    .main-wrapper p {
+        font-size: 0.8125rem;
+    }
+
+    .main-wrapper h1 {
+        font-size: 1.75rem;
+    }
+
+    .mob-divider {
+        display: none;
+    }
+
+    .desk-divider {
+        display: unset;
+    }
+
+    .btn {
+        margin-bottom: -84px;
+    }
+}
